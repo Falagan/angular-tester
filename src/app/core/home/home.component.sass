@@ -1,0 +1,55 @@
+@import '../../../styles'
+
+.input-login
+  border-left: none
+  border-top: none
+  border-right: none
+  background-color: $input-login-background-color
+  border-bottom: 1px solid $input-login-border-bottom-color
+  border-radius: 0
+  color: $input-login-color
+  width: 260px!important
+  height: 35px
+  margin-bottom: 10px
+
+.form-control::-webkit-input-placeholder  /* WebKit browsers */
+     color: $white
+
+.form-control::-moz-placeholder  /* Mozilla Firefox 4 to 18 */
+     color:  $white
+
+.form-control::-moz-placeholder  /* Mozilla Firefox 19+ */
+      color:  $white
+
+.form-control::-ms-input-placeholder  /* Internet Explorer 10+ */
+      color:  $white
+
+.card-login
+  box-shadow: none
+  background-color: $dark
+  width: 70%
+  margin: 0 auto
+
+.logo-text
+  color: $logo-text-color
+
+.logo-text > span 
+  color: $logo-color
+
+.logo-img
+  width: 96px
+  height: 96px
+
+.login-fail
+  border-bottom: 1px solid red
+
+.logo-container
+  margin-left: auto
+
+.check
+  margin-left: -16px
+  color: $white
+
+@media (max-width: 455px)
+  .logo-container
+    margin: 0 auto

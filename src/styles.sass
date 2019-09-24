@@ -1,0 +1,440 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
+@charset "utf-8"
+
+// TIPOGRAFIA
+$font-family-sans-serif: "Segoe UI", sans-serif
+$font-family-monospace: monospace
+$font-family-code: monospace
+
+// TEMPLATE
+// Colores
+$gray: gray
+$gray-1:#5c6671
+$gray-2: #656a6f
+
+$dark: #363636
+$dark-2: #656565 4 a
+$dark-3:#3e4b5b
+
+$yellow: #e3ab12
+$yellow-link: #9a740d
+
+$white: white
+$black: black
+
+$green: #2e7d81
+$green-link: #007a7a
+
+// Variables
+//Textos
+$title-color: $white
+$subtitle-color: $green
+$text-color: $dark-3
+//Links
+$link: $green
+$link-hover: $green-link
+// Lines
+$line-dotted-color: $gray-1
+$line-dotted-color-hover: $gray-2
+//Buttons
+$enable-pointer-cursor-for-buttons: cursor
+$button-background-color: transparent
+$button-border-color: $white
+$button-color-hover: $green
+$button-border-color-hover: $green
+$button-background-color: $gray-1
+$button-color: $white
+$button-border-color-focus: $green
+$button-color-focus: $green
+$button-border-color-disable: $gray
+$button-color-disable: $gray
+// Menu Buttons
+$menu-button-background-color: transparent
+$menu-button-border-color: transparent
+$menu-button-color-hover: $white
+$menu-button-border-color-hover: transparent
+$menu-button-background-color: $green
+$menu-button-color: $green
+$menu-button-border-color-focus: $white
+$menu-button-color-focus: $white
+$menu-button-border-color-disable: $gray
+$menu-button-color-disable: $gray
+$menu-component-border-color: $gray
+//Modals
+$modal-content-width: 400px !important
+$modal-background-color: $green
+//Inputs y Controls
+$input-login-color: $white
+$input-login-background-color: $gray-1
+$input-login-border-bottom-color: $white
+$input-border-color: transparent
+$input-shadow: none
+$control-border-width: 1px
+$control-radius: 0
+//Logo
+$logo-text-color: $white
+$logo-color: $green
+//Menu Lateral
+$aside-border-color: $dark-3
+$aside-background-color: $dark-3
+$aside-links-color: $white
+$aside-links-color-hover: $green
+//Header
+$header-background-color: $dark-3
+$header-color: $white
+//Fa icons
+$fa-icon-color: $white
+$fa-icon-color-hover: $green
+$fa-icon-waiter-color: $green
+
+
+// ESTILOS COMUNES
+//Body, Html
+html, body
+  //height: 100%
+  background-color: $gray-1
+//Outline
+*:focus
+  outline: none !important
+  box-shadow: none !important
+
+*:active
+  outline: none !important
+  box-shadow: none !important
+
+// Forms
+
+.form-control:focus
+  border-color: $white
+  background-color: transparent
+  color: $white
+
+
+.input-group-text
+  background-color: transparent
+  border-bottom: 1px solid $button-border-color
+  border-top: none
+  border-right: none
+  border-left: none
+  border-radius: 0
+
+
+hr
+  height: 1px !important
+  background-color: $dark-3 !important
+
+//Button
+
+button
+  padding: 4px
+  background-color: $button-background-color
+  color: $button-color
+  border: 1px solid $button-border-color
+
+button:hover
+  color: $button-color-hover
+  border-color: $button-color-hover
+
+button:focus
+  border-color: $button-border-color-focus
+  color: $button-color-focus
+
+button:disabled
+  border-color: $button-border-color-disable
+  color: $button-color-disable
+//FaIcon
+
+fa-icon
+  color: $fa-icon-color
+  border-color: $fa-icon-color
+
+fa-icon:hover
+  color: $fa-icon-color-hover
+  border-color: $fa-icon-color-hover
+
+// Waiters
+.waiter
+  color: $fa-icon-waiter-color
+
+// Cards
+.card
+  border: none
+  border-radius: 0
+  padding: 5px
+  background-color: $dark-3
+  color: $white
+  min-height: 425px
+
+.card-options
+  background-color: transparent
+
+.card-loading
+  background-color: $dark-3
+
+.card-filter
+  background-color: $dark-3
+
+.card-title
+  font-size: 15px
+  text-align: left
+  font-weight: bold
+  color: $white
+
+// List
+.list-group-item
+  background-color: transparent
+  border-color: $dark-2
+  font-size: 12px
+
+// Badge
+.badge
+  background-color: transparent
+  border-radius: 0
+  color: $dark
+
+// Table
+th
+  font-weight: lighter
+
+.table-dark
+  background-color: $dark-3
+// Selects
+
+select
+  border-radius: 0
+  background-color: transparent
+  height: 30px
+  color: $white
+  border-color: $white
+
+select option
+  background-color: $dark-3
+  border-color: $white
+// Hr
+
+hr
+  border-color: $gray-1
+// Input
+
+input
+  border-radius: 0
+  background-color: transparent
+  height: 30px
+  color: $white
+  border: 1px solid $white
+
+// Checkbox/ Radio
+
+.checkbox
+  padding-left: 25px
+
+.checkbox label
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  padding-left: 5px
+.checkbox label::before
+  margin-top: 4px
+  content: ""
+  display: inline-block
+  position: absolute
+  width: 17px
+  height: 17px
+  left: 0
+  margin-left: -20px
+  border: 1px solid $white
+  border-radius: 0
+  background-color: transparent
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out
+.checkbox label::after
+  display: inline-block
+  position: absolute
+  width: 16px
+  height: 16px
+  left: -2px
+  top: 0
+  margin-left: -20px
+  padding-left: 3px
+  padding-top: 1px
+  font-size: 15px
+  color: $gray-1
+.checkbox input[type="checkbox"],
+.checkbox input[type="radio"]
+  opacity: 0
+  z-index: 1
+  cursor: pointer
+
+.checkbox input[type="checkbox"]:focus + label::before,
+.checkbox input[type="radio"]:focus + label::before
+  outline: none
+.checkbox input[type="checkbox"]:checked + label::after,
+.checkbox input[type="radio"]:checked + label::after
+  font-family: "FontAwesome"
+  content: "\f00c"
+.checkbox input[type="checkbox"]:indeterminate + label::after,
+.checkbox input[type="radio"]:indeterminate + label::after
+  display: block
+  content: ""
+  width: 10px
+  height: 3px
+  background-color: transparent
+  border-radius: 0
+  margin-left: -16.5px
+  margin-top: 7px
+
+.checkbox input[type="checkbox"]:disabled,
+.checkbox input[type="radio"]:disabled
+  cursor: not-allowed
+
+.checkbox input[type="checkbox"]:disabled + label,
+.checkbox input[type="radio"]:disabled + label
+  opacity: 0.65
+.checkbox input[type="checkbox"]:disabled + label::before,
+.checkbox input[type="radio"]:disabled + label::before
+  background-color: $gray-1
+  cursor: not-allowed
+.checkbox.checkbox-circle label::before
+  border-radius: 50%
+.checkbox.checkbox-inline
+  margin-top: 0
+
+.checkbox-app input[type="checkbox"]:checked + label::before,
+.checkbox-app input[type="radio"]:checked + label::before
+  background-color: $green
+  border-color: transparent
+.checkbox-app input[type="checkbox"]:checked + label::after,
+.checkbox-app input[type="radio"]:checked + label::after
+  color: #fff
+
+.checkbox-app input[type="checkbox"]:indeterminate + label::before,
+.checkbox-app input[type="radio"]:indeterminate + label::before
+  background-color: $green
+  border-color: transparent
+
+
+.checkbox-app input[type="checkbox"]:indeterminate + label::after,
+.checkbox-app input[type="radio"]:indeterminate + label::after
+  background-color: #fff
+
+// Radio
+
+.radio
+  padding-left: 20px
+.radio label
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  padding-left: 5px
+.radio label::before
+  content: ""
+  display: inline-block
+  position: absolute
+  width: 17px
+  height: 17px
+  left: 0
+  margin-left: -20px
+  border: 1px solid #cccccc
+  border-radius: 50%
+  background-color: #fff
+  -webkit-transition: border 0.15s ease-in-out
+  -o-transition: border 0.15s ease-in-out
+  transition: border 0.15s ease-in-out
+.radio label::after
+  display: inline-block
+  position: absolute
+  content: " "
+  width: 11px
+  height: 11px
+  left: 3px
+  top: 3px
+  margin-left: -20px
+  border-radius: 50%
+  background-color: #555555
+  -webkit-transform: scale(0, 0)
+  -ms-transform: scale(0, 0)
+  -o-transform: scale(0, 0)
+  transform: scale(0, 0)
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33)
+  -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33)
+  -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33)
+  transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33)
+.radio input[type="radio"]
+  opacity: 0
+  z-index: 1
+  cursor: pointer
+
+.radio input[type="radio"]:focus + label::before
+  outline: thin dotted
+  outline: 5px auto -webkit-focus-ring-color
+  outline-offset: -2px
+.radio input[type="radio"]:checked + label::after
+  -webkit-transform: scale(1, 1)
+  -ms-transform: scale(1, 1)
+  -o-transform: scale(1, 1)
+  transform: scale(1, 1)
+.radio input[type="radio"]:disabled
+  cursor: not-allowed
+
+.radio input[type="radio"]:disabled + label
+  opacity: 0.65
+.radio input[type="radio"]:disabled + label::before
+  cursor: not-allowed
+.radio.radio-inline
+  margin-top: 0
+
+.radio-app input[type="radio"] + label::after
+  background-color: $green
+.radio-app input[type="radio"]:checked + label::before
+  border-color: $white
+.radio-app input[type="radio"]:checked + label::after
+  background-color: $white
+
+
+input[type="checkbox"].styled:checked + label:after,
+input[type="radio"].styled:checked + label:after
+  font-family: 'FontAwesome'
+  content: "\f00c"
+input[type="checkbox"] .styled:checked + label::before,
+input[type="radio"] .styled:checked + label::before
+  color: #fff
+input[type="checkbox"] .styled:checked + label::after,
+input[type="radio"] .styled:checked + label::after
+  color: #fff
+
+//Menus
+
+.menu-component-button
+  padding: 4px
+  background-color: $menu-button-background-color
+  color: $menu-button-color
+  border: none
+
+.menu-component-button:hover
+  color: $menu-button-color-hover
+  border: none
+
+.menu-component-button:focus
+  border-color: $menu-button-border-color-focus
+  color: $menu-button-color-focus
+
+.menu-component-button:disabled
+  border-color: $menu-button-border-color-disable
+  color: $menu-button-color-disable
+
+// Container
+app-dynamic-table
+  padding: 10px
+  width: 50%
+  min-width: 400px
+
+app-dynamic-adder
+  padding: 10px
+  width: 50%
+  min-width: 400px
+
+
+
+

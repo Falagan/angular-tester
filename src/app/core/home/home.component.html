@@ -1,0 +1,36 @@
+<div class="main-home-container d-flex flex-row flex-wrap align-items-center justify-content-around vh-100">
+    <div class="p-4 logo-container">
+      <!-- <img src="assets/img/logo2.png" class="logo-img"> -->
+      <h2 class="logo-text text-monospace">pinol<span><strong>¨</strong></span></h2>
+    </div>
+    <div class="p-4 m-auto">
+      <div class="m-auto text-center">
+        <form [formGroup]="formLogin" (submit)="onSubmit(formLogin.value)" autocomplete="off">
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text p-0"><fa-icon icon="user-astronaut"></fa-icon></span>
+              </div>
+              <input type="email" class="form-control input-login" formControlName="user">
+              <span class="input-group-text p-0 check" *ngIf="!lf.user.errors && ( lf.user.touched || lf.user.dirty)">
+                <fa-icon icon="check"></fa-icon>
+              </span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text p-0"><fa-icon icon="fingerprint"></fa-icon></span>
+              </div>
+              <input type="email" class="form-control input-login" formControlName="password">
+              <span class="input-group-text p-0 check"
+                    *ngIf="!lf.password.errors && ( lf.password.touched || lf.password.dirty)">
+                <fa-icon icon="check"></fa-icon>
+              </span>
+            </div>
+          </div>
+          <button type="submit" class="button">Entrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
