@@ -5,6 +5,8 @@ import { MainComponent } from './main.component';
 import { ReporterComponent } from '../reporter/reporter.component';
 import { TodoComponent } from '../todo/todo.component';
 import { MainRoutingModule } from './main-routing.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TestModule } from 'ui';
 
 
 
@@ -13,7 +15,9 @@ import { MainRoutingModule } from './main-routing.module';
   imports: [
     CommonModule,
     MainRoutingModule,
-    SharedModule
+    SharedModule,
+    FontAwesomeModule,
+    TestModule
   ]
 })
 export class MainModule { }

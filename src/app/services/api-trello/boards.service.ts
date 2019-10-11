@@ -13,7 +13,6 @@ export class BoardsService {
   private token;
   private key;
   private userId;
-  private httpOptions;
 
   constructor(private _http: HttpClient) {
     this.baseUrl = environment.apiUrls.members;
@@ -21,17 +20,10 @@ export class BoardsService {
     this.key = environment.apiKey;
     this.segment = '/boards';
     this.userId = environment.apiUser;
-
-    this.httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json',
-      })
-    };
-
   }
 
   public get() {
-    return this._http.get<IBoard>(`${this.baseUrl}${this.userId}${this.segment}?key=${this.key}&token=${this.token}`)
+    return this._http.get<IBoard[]>(`${this.baseUrl}${this.userId}${this.segment}?key=${this.key}&token=${this.token}`)
   }
 
 }
