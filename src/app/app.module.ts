@@ -9,7 +9,6 @@ import { StaticModule } from './static/static.module';
 import { CoreModule } from './core/core.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ModalsComponent } from './services/modals/modals-templates/modals.component';
-import { AsideMenuComponent } from './shared/aside-menu/aside-menu.component';
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
 
@@ -28,7 +27,7 @@ library.add(fas);
     CoreModule,
     SharedModule,
     FontAwesomeModule,
-    HttpClientModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

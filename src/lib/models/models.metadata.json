@@ -1,0 +1,1 @@
+{"__symbolic":"module","version":4,"metadata":{"IHotel":{"__symbolic":"interface"},"HotelKeytel":{"__symbolic":"class","members":{"__ctor__":[{"__symbolic":"constructor"}]}}},"origins":{"IHotel":"./lib/hotels/IHotel","HotelKeytel":"./lib/hotels/hotel.keytel"},"importAs":"models"}

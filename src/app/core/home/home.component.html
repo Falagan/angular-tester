@@ -1,15 +1,18 @@
-<div class="main-home-container d-flex flex-row flex-wrap align-items-center justify-content-around vh-100">
-    <div class="p-4 logo-container">
-      <!-- <img src="assets/img/logo2.png" class="logo-img"> -->
-      <h2 class="logo-text text-monospace">pinol<span><strong>¨</strong></span></h2>
+<div class="container-fluid main-home-container">
+  <div class="d-flex flex-row flex-wrap align-items-center vh-100">
+    <div class="p-0 w-50 logo-container">
+      <img src="assets/angular.png">
+      <h1 class="logo-text text-monospace text-center">AngularTester<span><strong>¨</strong></span></h1>
     </div>
-    <div class="p-4 m-auto">
-      <div class="m-auto text-center">
+    <div class="p-0 w-50 login-container">
+      <div class="w-50 text-center">
         <form [formGroup]="formLogin" (submit)="onSubmit(formLogin.value)" autocomplete="off">
           <div class="form-group">
-            <div class="input-group">
+            <div class="input-group flex-nowrap">
               <div class="input-group-prepend">
-                <span class="input-group-text p-0"><fa-icon icon="user-astronaut"></fa-icon></span>
+                <span class="input-group-text p-0">
+                  <fa-icon icon="user-astronaut"></fa-icon>
+                </span>
               </div>
               <input type="email" class="form-control input-login" formControlName="user">
               <span class="input-group-text p-0 check" *ngIf="!lf.user.errors && ( lf.user.touched || lf.user.dirty)">
@@ -18,13 +21,15 @@
             </div>
           </div>
           <div class="form-group">
-            <div class="input-group">
+            <div class="input-group flex-nowrap">
               <div class="input-group-prepend">
-                <span class="input-group-text p-0"><fa-icon icon="fingerprint"></fa-icon></span>
+                <span class="input-group-text p-0">
+                  <fa-icon icon="fingerprint"></fa-icon>
+                </span>
               </div>
               <input type="email" class="form-control input-login" formControlName="password">
               <span class="input-group-text p-0 check"
-                    *ngIf="!lf.password.errors && ( lf.password.touched || lf.password.dirty)">
+                *ngIf="!lf.password.errors && ( lf.password.touched || lf.password.dirty)">
                 <fa-icon icon="check"></fa-icon>
               </span>
             </div>
@@ -34,3 +39,4 @@
       </div>
     </div>
   </div>
+</div>
