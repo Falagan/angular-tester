@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ReporterComponent } from '../reporter/reporter.component';
-import { TodoComponent } from '../todo/todo.component';
+import { ReporterComponent } from './reporter/reporter.component';
+import { TodoComponent } from './todo/todo.component';
 import { MainComponent } from './main.component';
 
 
