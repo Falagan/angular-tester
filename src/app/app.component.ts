@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
   constructor(
     private _modalsService: ModalsService,
     private _router: Router){
-    this.title = 'pinol';
+    this.title = 'Angular Tester';
   }
 
   ngOnInit() {
