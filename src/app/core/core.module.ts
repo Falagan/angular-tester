@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { TestModule } from 'ui';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -11,8 +10,7 @@ import { TestModule } from 'ui';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    FontAwesomeModule,
-    TestModule
+    FontAwesomeModule
   ]
 })
 export class CoreModule { }
