@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
-import { IModal } from 'src/app/models/IModal';
+import { IModal } from 'src/app/services/modals/IModal';
 import { ModalsService } from '../modals.service';
 
 @Component({

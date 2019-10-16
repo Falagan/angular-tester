@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalsService } from './services/modals/modals.service';
-import { IModal } from './models/IModal';
+import { IModal } from './services/modals/IModal';
 import { Router, NavigationStart, NavigationEnd } from '@angular/router';
 
 @Component({
@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
   constructor(
     private _modalsService: ModalsService,
     private _router: Router){
-    this.title = 'pinol';
+    this.title = 'Angular Tester';
   }
 
   ngOnInit() {
@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
     /** Navigate Events */
     this._router.events.subscribe(next =>
       next instanceof NavigationStart ? this._modalsService.show('waiter') :
-        next instanceof NavigationEnd ? this._modalsService.hide(500) : null
+        next instanceof NavigationEnd ? this._modalsService.hide(250) : null
     );
   }
 }

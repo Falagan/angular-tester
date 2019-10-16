@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AsideMenuComponent } from './aside-menu/aside-menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
-
+import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
-  declarations: [AsideMenuComponent],
+  declarations: [HeaderMenuComponent],
   imports: [
     CommonModule,
     FontAwesomeModule,
-    RouterModule
+    RouterModule,
+    NgbModule
   ],
-  exports:[AsideMenuComponent]
+  exports:[HeaderMenuComponent]
 })
 export class SharedModule { }

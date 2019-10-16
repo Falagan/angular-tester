@@ -1,24 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule } from 'src/app/shared/shared.module';
-import { MainComponent } from './main.component';
-import { ReporterComponent } from './reporter/reporter.component';
-import { TodoComponent } from './todo/todo.component';
+import { RouterModule } from '@angular/router';
 import { MainRoutingModule } from './main-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { TestModule } from 'ui';
-import { BoardsTableComponent } from './reporter/boards-table/boards-table.component';
+import { ModulesModule } from 'src/app/modules/modules.module';
+import { MainComponent } from './main.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
 @NgModule({
-  declarations: [MainComponent, ReporterComponent, TodoComponent, BoardsTableComponent],
+  declarations: [MainComponent],
   imports: [
     CommonModule,
+    RouterModule,
     MainRoutingModule,
-    SharedModule,
     FontAwesomeModule,
-    TestModule
+    ModulesModule,
+    SharedModule,
   ]
 })
 export class MainModule { }
