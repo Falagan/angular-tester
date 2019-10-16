@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ReporterComponent } from 'src/app/modules/reporter/reporter.component';
-import { TodoComponent } from 'src/app/modules/todo/todo.component';
+import { ReporterComponent } from '../../modules/reporter/reporter.component';
+import { TodoComponent } from '../../modules/todo/todo.component';
+import { WebsocketRxjsComponent } from 'src/app/modules/websocket-rxjs/websocket-rxjs.component';
 import { MainComponent } from './main.component';
 
 
@@ -17,6 +18,10 @@ const routes: Routes = [
       {
         path: 'todo',
         component: TodoComponent
+      },
+      {
+        path: 'websocketrxjs',
+        component: WebsocketRxjsComponent
       }
     ]
   }

@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NotFoundComponent } from './static/not-found/not-found.component';
+import { AboutComponent } from './static/about/about.component';
+import { RouterModule } from '@angular/router';
+import { BootstrapCustomModule } from 'ui';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent,NotFoundComponent, AboutComponent],
   imports: [
     CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterModule,
+    BootstrapCustomModule
   ]
 })
 export class CoreModule { }

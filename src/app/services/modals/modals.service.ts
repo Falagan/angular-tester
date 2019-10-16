@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Subject, Observable } from 'rxjs';
-import { IModal } from 'src/app/models/IModal';
+import { IModal } from 'src/app/services/modals/IModal';
 
 @Injectable({
   providedIn: 'root'

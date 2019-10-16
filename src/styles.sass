@@ -23,8 +23,7 @@ $black: black
 $green: #2e7d81
 $green-1-link: $white
 $green-1:#01e08f
-$red-angular: #CD6155 
-
+$red-angular: #CD6155
 
 // Variables
 //Textos
@@ -40,10 +39,10 @@ $line-dotted-color-hover: $gray-2
 //Buttons
 $enable-pointer-cursor-for-buttons: cursor
 $button-background-color: transparent
-$button-border-color: $white
-$button-color-hover: $black
-$button-border-color-hover: $black
-$button-color: $white
+$button-border-color: $black
+$button-color-hover: $white
+$button-border-color-hover: $white
+$button-color: $black
 $button-border-color-focus: $gray-1
 $button-color-focus: $gray-1
 $button-border-color-disable: $gray
@@ -62,7 +61,7 @@ $menu-button-color-disable: $gray
 $menu-component-border-color: $gray
 //Modals
 $modal-content-width: 400px !important
-$modal-background-color: $red-angular
+$modal-background-color: $white
 //Inputs y Controls
 $input-login-color: $white
 $input-login-background-color: $red-angular
@@ -86,12 +85,19 @@ $header-color: $black
 $fa-icon-color: $black
 $fa-icon-color-hover: $white
 $fa-icon-waiter-color: $white
+//Dropdown
+$dropdown-background-color: transparent
+$dropdown-color: $black
+$dropdown-border-color: $black
+$dropdown-border-color-hover: $white
+$dropdown-background-color-hover: transparent
+$dropdown-color-hover: $white
 
 // ESTILOS COMUNES
 //Body, Html
 html, body
   //height: 100%
-  background-color: $gray-3
+  background-color: $white
 //Outline
 *:focus
   outline: none !important
@@ -108,6 +114,7 @@ a
 
 a:hover
   color: $aside-links-color-hover
+  
 // Forms
 
 .form-control:focus
@@ -148,12 +155,12 @@ button:disabled
   color: $button-color-disable
 //FaIcon
 fa-icon
-  color: $fa-icon-color
-  border-color: $fa-icon-color
+  color: $fa-icon-color!important
+  border-color: $fa-icon-color!important
 
 fa-icon:hover
-  color: $fa-icon-color-hover
-  border-color: $fa-icon-color-hover
+  color: $fa-icon-color-hover!important 
+  border-color: $fa-icon-color-hover!important
 
 // Waiters
 .waiter
@@ -166,7 +173,6 @@ fa-icon:hover
   padding: 5px
   background-color: transparent
   color: $white
-
 
 .card-options
   background-color: transparent
@@ -240,6 +246,18 @@ input
   height: 30px
   color: $white
   border: 1px solid $white
+
+//Dropdown
+.dropdown-toggle
+  background-color: $dropdown-background-color!important
+  color: $dropdown-color!important
+  border-color: $dropdown-border-color!important
+  border-radius: 0!important
+
+.dropdown-toggle:hover
+  border-color: $dropdown-border-color-hover!important
+  background-color: $dropdown-background-color-hover!important
+  color: $dropdown-color-hover!important
 
 // Checkbox/ Radio
 

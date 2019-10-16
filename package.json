@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "dev": "ng serve -o --port 1000 --configuration development --base-href /angularTester/",
+    "dev": "ng serve -o --port 1000 --configuration development --base-href /angularTester/ --source-map=true",
     "build": "ng build --base-href /angularTester/",
     "lint": "ng lint"
   },
@@ -17,10 +17,10 @@
     "@angular/platform-browser": "~8.2.3",
     "@angular/platform-browser-dynamic": "~8.2.3",
     "@angular/router": "~8.2.3",
-    "@ng-bootstrap/ng-bootstrap": "^5.0.0",
     "@fortawesome/angular-fontawesome": "^0.3.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@ng-bootstrap/ng-bootstrap": "^5.1.1",
     "bootstrap": "^4.3.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
