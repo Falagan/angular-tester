@@ -6,10 +6,12 @@ import {fas} from '@fortawesome/free-solid-svg-icons';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ModalsComponent } from './services/modals/modals-templates/modals.component';
 import { RouterModule } from '@angular/router';
 import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalsComponent } from './shared/services/modals/modals-templates/modals.component';
+import { ModulesModule } from './modules/modules.module';
+
 library.add(fas);
 
 @NgModule({
@@ -24,7 +26,8 @@ library.add(fas);
     FontAwesomeModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    CoreModule
+    CoreModule,
+    ModulesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

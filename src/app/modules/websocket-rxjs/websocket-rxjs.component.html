@@ -1,2 +1,15 @@
-<p>A probar websockets con angular y RxJS!</p>
-<p>websocket-rxjs works!</p>
+<div class="d-flex flex-column text-center">
+  <div class="pt-4 m-auto w-100">
+    <div class="alert alert-secondary text-center" role="alert">
+      <h4><strong>Módulo WebsocketRxJs</strong></h4>
+    </div>
+  </div>
+  <div class="p-2 w-50 m-auto">
+    <div class="form-group">
+      <label>Mensajes recibidos desde ultratumba</label>
+      <app-websocket-console
+          [websocketResponse]="logs"
+      ></app-websocket-console>
+    </div>
+  </div>
+</div>

@@ -1,21 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReporterComponent } from './reporter/reporter.component';
 import { TodoComponent } from './todo/todo.component';
 import { RouterModule } from '@angular/router';
 import { WebsocketRxjsModule } from './websocket-rxjs/websocket-rxjs.module';
-import { BootstrapCustomModule } from 'ui';
+import { BootstrapCustomModule } from '../../lib/library-angular-tester/ui';
+import { ReporterModule } from './reporter/reporter.module';
 
 
 
 @NgModule({
-  declarations: [ReporterComponent,TodoComponent],
+  declarations: [TodoComponent],
   imports: [
     CommonModule,
     RouterModule,
     WebsocketRxjsModule,
-    BootstrapCustomModule
+    BootstrapCustomModule,
+    ReporterModule
   ],
-  exports: [ReporterComponent,TodoComponent]
+  exports: [TodoComponent]
 })
 export class ModulesModule { }

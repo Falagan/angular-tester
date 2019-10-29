@@ -1,0 +1,21 @@
+{
+  "name": "models",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.11",
+    "@angular/core": "^8.2.11"
+  },
+  "main": "bundles/models.umd.js",
+  "module": "fesm5/models.js",
+  "es2015": "fesm2015/models.js",
+  "esm5": "esm5/models.js",
+  "esm2015": "esm2015/models.js",
+  "fesm5": "fesm5/models.js",
+  "fesm2015": "fesm2015/models.js",
+  "typings": "models.d.ts",
+  "metadata": "models.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

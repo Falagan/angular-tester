@@ -6,6 +6,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ModulesModule } from 'src/app/modules/modules.module';
 import { MainComponent } from './main.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatIconModule} from "@angular/material/icon";
+import {MatMenuModule} from "@angular/material/menu";
+import {MatTreeModule} from "@angular/material/tree";
 
 
 
@@ -18,6 +23,11 @@ import { SharedModule } from 'src/app/shared/shared.module';
     FontAwesomeModule,
     ModulesModule,
     SharedModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatMenuModule,
+    MatTreeModule,
   ]
 })
 export class MainModule { }

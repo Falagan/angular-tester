@@ -19,23 +19,23 @@
       "dom"
     ],
     "paths": {
-      "models": [
-        "src/lib/models"
+      "libraryTester/models": [
+        "src/lib/library-angular-tester/models"
       ],
-      "models/*": [
-        "src/lib/models/*"
+      "libraryTester/ui": [
+        "src/lib/library-angular-tester/ui"
       ],
-      "ui": [
-        "src/lib/ui"
+      "libraryTester/services": [
+        "src/lib/library-angular-tester/services"
       ],
-      "ui/*": [
-        "src/lib/ui/*"
+      "cibeles/models": [
+        "src/lib/cibeles/models"
       ],
-      "services": [
-        "src/lib/services"
+      "cibeles/ui": [
+        "src/lib/cibeles/ui"
       ],
-      "services/*": [
-        "src/lib/services/*"
+      "cibeles/services": [
+        "src/lib/cibeles/services"
       ]
     }
   },
