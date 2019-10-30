@@ -1,4 +1,29 @@
-<lib-home-login
-  [data]="homeLoginData"
-  (navigateTo)="navigateTo($event)"
-></lib-home-login>
+<mat-toolbar class="mat-primary">
+  <mat-toolbar-row>
+    <img class="logo-img" src="assets/angular.png">
+    <h5 class="pl-2">Angular Tester</h5>
+    <div class="ml-auto">
+      <img class="logo-gitHub" src="assets/github-icon.svg">
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container class="home-container">
+  <mat-sidenav-content class="vh-100">
+    <div class="d-flex flex-row justify-content-center align-items-center h-100">
+      <div class="p-0">
+        <img class="img-fluid logo-img-main" src="assets/angular.png">
+      </div>
+      <div class="p-0">
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Usuario" value="Sushi">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="Contraseña"></textarea>
+          </mat-form-field>
+        </form>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

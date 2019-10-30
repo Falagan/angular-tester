@@ -14,6 +14,10 @@ const routes: Routes = [
         loadChildren: () => import('../../modules/reporter/reporter.module').then(m => m.ReporterModule)
       },
       {
+        path: 'mercurio-services',
+        loadChildren: () => import('../../modules/mercurio-services/mercurio-services.module').then(m => m.MercurioServicesModule)
+      },
+      {
         path: 'todo',
         component: TodoComponent
       },

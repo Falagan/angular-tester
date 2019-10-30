@@ -3,12 +3,18 @@
 @charset "utf-8"
 
 // TIPOGRAFIA
-$font-family-sans-serif: "Segoe UI", sans-serif
+$font-family-sans-serif: "Roboto", sans-serif
 $font-family-monospace: monospace
 $font-family-code: monospace
 
 // TEMPLATE
 // Colores
+$pink: #c2185b
+$pink-2: #d81b60
+$white: white
+$black: black
+
+
 $gray: gray
 $gray-1:#5c6671
 $gray-2: #656a6f
@@ -18,14 +24,53 @@ $dark-2: #656565
 $dark-3:#3e4b5b
 $yellow: #e3ab12
 $yellow-link: #9a740d
-$white: white
-$black: black
 $green: #2e7d81
 $green-1-link: $white
 $green-1:#01e08f
 $red-angular: #CD6155
 
-// Variables
+
+//Mat
+//COLORES
+.mat-primary
+  background-color: $pink-2
+
+//CONTAINERS
+mat-sidenav-container
+  background-color: $white
+
+//MENUS
+mat-toolbar
+  position: absolute
+  top: 0
+  z-index: 9999
+
+.mat-button-wrapper
+  font-size: 16px
+  font-weight: 400
+
+//Globales
+//ScrollBar
+/* width */
+::-webkit-scrollbar
+  width: 8px
+
+
+/* Track */
+::-webkit-scrollbar-track
+  background: #f1f1f1
+
+
+/* Handle */
+::-webkit-scrollbar-thumb
+  background: #888
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+  background: #555
+
+
 //Textos
 $title-color: $black
 $subtitle-color: $white
@@ -36,29 +81,7 @@ $link-hover: $green-1-link
 // Lines
 $line-dotted-color: $gray-1
 $line-dotted-color-hover: $gray-2
-//Buttons
-$enable-pointer-cursor-for-buttons: cursor
-$button-background-color: transparent
-$button-border-color: $black
-$button-color-hover: $white
-$button-border-color-hover: $white
-$button-color: $black
-$button-border-color-focus: $gray-1
-$button-color-focus: $gray-1
-$button-border-color-disable: $gray
-$button-color-disable: $gray
-// Menu Buttons
-$menu-button-background-color: transparent
-$menu-button-border-color: transparent
-$menu-button-color-hover: $white
-$menu-button-border-color-hover: transparent
-$menu-button-background-color: $green
-$menu-button-color: $green
-$menu-button-border-color-focus: $white
-$menu-button-color-focus: $white
-$menu-button-border-color-disable: $gray
-$menu-button-color-disable: $gray
-$menu-component-border-color: $gray
+
 //Modals
 $modal-content-width: 400px !important
 $modal-background-color: $white
@@ -96,7 +119,7 @@ $dropdown-color-hover: $white
 // ESTILOS COMUNES
 //Body, Html
 html, body
-  //height: 100%
+  height: 100%
   background-color: $white
 //Outline
 *:focus
@@ -134,25 +157,6 @@ hr
   height: 1px !important
   background-color: $dark-3 !important
 
-//Button
-
-button
-  padding: 4px
-  background-color: $button-background-color
-  color: $button-color
-  border: 1px solid $button-border-color
-
-button:hover
-  color: $button-color-hover
-  border-color: $button-color-hover
-
-button:focus
-  border-color: $button-border-color-focus
-  color: $button-color-focus
-
-button:disabled
-  border-color: $button-border-color-disable
-  color: $button-color-disable
 //FaIcon
 fa-icon
   color: $fa-icon-color!important
@@ -436,32 +440,4 @@ input[type="checkbox"] .styled:checked + label::after,
 input[type="radio"] .styled:checked + label::after
   color: #fff
 
-//Menus
 
-.menu-component-button
-  padding: 4px
-  background-color: $menu-button-background-color
-  color: $menu-button-color
-  border: none
-
-.menu-component-button:hover
-  color: $menu-button-color-hover
-  border: none
-
-.menu-component-button:focus
-  border-color: $menu-button-border-color-focus
-  color: $menu-button-color-focus
-
-.menu-component-button:disabled
-  border-color: $menu-button-border-color-disable
-  color: $menu-button-color-disable
-
-// Container
-app-dynamic-table
-  padding: 10px
-  width: 50%
-  min-width: 400px
-app-dynamic-adder
-  padding: 10px
-  width: 50%
-  min-width: 400px
