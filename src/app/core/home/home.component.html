@@ -9,19 +9,19 @@
 </mat-toolbar>
 <mat-sidenav-container class="home-container">
   <mat-sidenav-content class="vh-100">
-    <div class="d-flex flex-row justify-content-center align-items-center h-100">
-      <div class="p-0">
-        <img class="img-fluid logo-img-main" src="assets/angular.png">
+    <div class="d-flex flex-row flex-wrap justify-content-around align-items-center h-100">
+      <div class="p-0 mt-5">
+        <img class="img-fluid logo-img-main pt-6" src="assets/images.png">
       </div>
       <div class="p-0">
-        <form class="example-form">
-          <mat-form-field class="example-full-width">
-            <input matInput placeholder="Usuario" value="Sushi">
+        <form>
+          <mat-form-field class="w-100">
+            <input matInput placeholder="Usuario" value="">
           </mat-form-field>
-
-          <mat-form-field class="example-full-width">
-            <textarea matInput placeholder="Contraseña"></textarea>
+          <mat-form-field class="w-100">
+            <input matInput  placeholder="Contraseña" value="">
           </mat-form-field>
+          <button mat-raised-button color="primary" routerLink="/main">Entrar</button>
         </form>
       </div>
     </div>

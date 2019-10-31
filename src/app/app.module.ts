@@ -11,6 +11,8 @@ import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalsComponent } from './shared/services/modals/modals-templates/modals.component';
 import { ModulesModule } from './modules/modules.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 library.add(fas);
 
@@ -27,7 +29,8 @@ library.add(fas);
     BrowserAnimationsModule,
     HttpClientModule,
     CoreModule,
-    ModulesModule
+    ModulesModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,6 +11,7 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatButtonModule} from "@angular/material/button";
 import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [HomeComponent,NotFoundComponent, AboutComponent],
@@ -23,7 +24,8 @@ import {MatFormFieldModule} from "@angular/material/form-field";
     MatSidenavModule,
     MatMenuModule,
     MatButtonModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule,
   ]
 })
 export class CoreModule { }

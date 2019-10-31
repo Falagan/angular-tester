@@ -19,13 +19,6 @@ class Constants {
     ]
   };
 
-  public static HOME_LOGIN_INIT_DATA: IHomeLoginData = {
-   title: 'Angular Tester ¨',
-   faIcons: {
-     user:'user-astronaut',
-     password:'fingerprint'
-   }
-  };
 }
 
 export default Constants;

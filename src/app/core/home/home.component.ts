@@ -11,13 +11,9 @@ import { ModalsService } from 'src/app/shared/services/modals/modals.service';
 })
 export class HomeComponent implements OnInit {
 
-  public homeLoginData = Constants.HOME_LOGIN_INIT_DATA;
 
-  constructor(private _router: Router, private _modalsService: ModalsService) {}
+  constructor(private _modalsService: ModalsService) {}
 
   ngOnInit() {}
 
-  public navigateTo(event) {
-    event ? this._router.navigate(['main']) : this._modalsService.show('error');
-  }
 }
