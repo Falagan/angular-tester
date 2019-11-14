@@ -2,11 +2,39 @@
   <mat-toolbar-row>
     <img class="logo-img" src="assets/angular.png">
     <h5 class="pl-2 pr-2 mb-0">Angular Tester</h5>
-    <button mat-button>Overview</button>
-    <button mat-button>Módulos</button>
-    <button mat-button>Equipo</button>
+    <button mat-button routerLink="/main">Overview</button>
+    <button mat-button [matMenuTriggerFor]="animals">Módulos</button>
+    <mat-menu #animals="matMenu">
+      <button mat-menu-item routerLink="/main/reporter">Reporter</button>
+      <button mat-menu-item>ToDo</button>
+      <button mat-menu-item routerLink="/main/websocketrxjs">WebSocket RxJs</button>
+      <button mat-menu-item routerLink="/main/world-bank">World-Bank</button>
+      <button mat-menu-item routerLink="/main/akita-state-management">Akita Shop</button>
+    </mat-menu>
+    <button mat-button routerLink="/about">Equipo</button>
+    <div class="ml-auto">
+      <button mat-icon-button [matMenuTriggerFor]="menu"
+              aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/">
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Logout</span>
+        </button>
+        <button mat-menu-item disabled>
+          <mat-icon>notifications_off</mat-icon>
+          <span>Disable alerts</span>
+        </button>
+      </mat-menu>
+      <img class="logo-gitHub" src="assets/github-icon.svg">
+    </div>
   </mat-toolbar-row>
 </mat-toolbar>
 <mat-sidenav-container>
-  <mat-sidenav-content></mat-sidenav-content>
+  <mat-sidenav-content>
+    <div class="mt-5">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
 </mat-sidenav-container>

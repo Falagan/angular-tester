@@ -1,1 +1,1 @@
-{"__symbolic":"module","version":4,"metadata":{"IHotel":{"__symbolic":"interface"},"HotelKeytel":{"__symbolic":"class","members":{"__ctor__":[{"__symbolic":"constructor"}]}}},"origins":{"IHotel":"./lib/hotels/IHotel","HotelKeytel":"./lib/hotels/hotel.keytel"},"importAs":"models"}
+{"__symbolic":"module","version":4,"metadata":{"User":{"__symbolic":"class","members":{"__ctor__":[{"__symbolic":"constructor","parameters":[{"__symbolic":"reference","name":"number"},{"__symbolic":"reference","name":"string"}]}]}}},"origins":{"User":"./lib/user"},"importAs":"models"}

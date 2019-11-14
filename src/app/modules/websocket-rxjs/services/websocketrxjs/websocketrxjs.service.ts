@@ -1,7 +1,7 @@
 import {Injectable} from "@angular/core";
 import {webSocket} from 'rxjs/webSocket';
 import {delay, retryWhen, tap} from "rxjs/operators";
-import {BehaviorSubject, ReplaySubject, Subject} from "rxjs";
+import { ReplaySubject, Subject} from "rxjs";
 
 @Injectable({
   providedIn: "root"
@@ -44,6 +44,10 @@ export class WebsocketrxjsService {
   public unBind(){
     this.socket$.unsubscribe();
     this.socketData$.unsubscribe();
+  }
+
+  public send(msg){
+    this.socket$.next(msg);
   }
 
 

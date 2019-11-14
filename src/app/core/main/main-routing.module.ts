@@ -14,16 +14,20 @@ const routes: Routes = [
         loadChildren: () => import('../../modules/reporter/reporter.module').then(m => m.ReporterModule)
       },
       {
-        path: 'mercurio-services',
-        loadChildren: () => import('../../modules/mercurio-services/mercurio-services.module').then(m => m.MercurioServicesModule)
-      },
-      {
         path: 'todo',
         component: TodoComponent
       },
       {
         path: 'websocketrxjs',
         component: WebsocketRxjsComponent
+      },
+      {
+        path: 'world-bank',
+        loadChildren: () => import('../../modules/world-bank/world-bank.module').then(m => m.WorldBankModule)
+      },
+      {
+        path: 'akita-state-management',
+        loadChildren: () => import('../../modules/akita-state-management/akita-state-management.module').then(m => m.AkitaStateManagementModule)
       }
     ]
   }

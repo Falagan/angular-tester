@@ -8,36 +8,61 @@
      * @fileoverview added by tsickle
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    /**
-     * @record
-     */
-    function IHotel() { }
-    if (false) {
-        /** @type {?} */
-        IHotel.prototype.name;
-        /** @type {?} */
-        IHotel.prototype.id;
-    }
-
-    /**
-     * @fileoverview added by tsickle
-     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-     */
-    var HotelKeytel = /** @class */ (function () {
-        function HotelKeytel() {
-            this.name = 'nombre test';
-            this.id = 300;
+    var User = /** @class */ (function () {
+        function User(id, alias) {
+            this._id = id;
+            this._alias = alias;
         }
-        return HotelKeytel;
+        Object.defineProperty(User.prototype, "id", {
+            get: /**
+             * @return {?}
+             */
+            function () {
+                return this._id;
+            },
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
+                this._id = value;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(User.prototype, "alias", {
+            get: /**
+             * @return {?}
+             */
+            function () {
+                return this._alias;
+            },
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
+                this._alias = value;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        return User;
     }());
     if (false) {
-        /** @type {?} */
-        HotelKeytel.prototype.name;
-        /** @type {?} */
-        HotelKeytel.prototype.id;
+        /**
+         * @type {?}
+         * @private
+         */
+        User.prototype._id;
+        /**
+         * @type {?}
+         * @private
+         */
+        User.prototype._alias;
     }
 
-    exports.HotelKeytel = HotelKeytel;
+    exports.User = User;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

@@ -1,9 +1,13 @@
 {
   "$schema": "./node_modules/@angular/service-worker/config/schema.json",
   "index": "/index.html",
+  "appData": {
+    "version": "1.0",
+    "changelog": "Actualizacion de version a la versión 1.0"
+  },
   "assetGroups": [
     {
-      "name": "app",
+      "name": "fullApp",
       "installMode": "prefetch",
       "resources": {
         "files": [
@@ -14,7 +18,8 @@
           "/*.js"
         ]
       }
-    }, {
+    },
+    {
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
@@ -23,6 +28,20 @@
           "/assets/**",
           "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
         ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "cache-api-continental-regions",
+      "urls": [
+        "!/**/*.*"
+      ],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxAge": "1d",
+        "timeout": "500u",
+        "maxSize": 10
       }
     }
   ]

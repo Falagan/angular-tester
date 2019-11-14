@@ -1,5 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
-import Constants from "src/assets/constants";
+import {User} from "../../../lib/library-angular-tester/models";
+
+
 
 @Component({
   selector: "app-reporter",
@@ -9,11 +11,14 @@ import Constants from "src/assets/constants";
 })
 export class ReporterComponent implements OnInit {
 
-  public asideMenuData = Constants.ASIDE_MENU_INIT_DATA;
+  public LoginUser: User;
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.LoginUser = new User(10,'Manolo');
+    console.log('User', this.LoginUser);
+  }
 
 
 }

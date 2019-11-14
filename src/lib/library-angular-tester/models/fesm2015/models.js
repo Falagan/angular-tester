@@ -2,32 +2,53 @@
  * @fileoverview added by tsickle
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-/**
- * @record
- */
-function IHotel() { }
-if (false) {
-    /** @type {?} */
-    IHotel.prototype.name;
-    /** @type {?} */
-    IHotel.prototype.id;
-}
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-class HotelKeytel {
-    constructor() {
-        this.name = 'nombre test';
-        this.id = 300;
+class User {
+    /**
+     * @param {?} id
+     * @param {?} alias
+     */
+    constructor(id, alias) {
+        this._id = id;
+        this._alias = alias;
+    }
+    /**
+     * @return {?}
+     */
+    get id() {
+        return this._id;
+    }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    set id(value) {
+        this._id = value;
+    }
+    /**
+     * @return {?}
+     */
+    get alias() {
+        return this._alias;
+    }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    set alias(value) {
+        this._alias = value;
     }
 }
 if (false) {
-    /** @type {?} */
-    HotelKeytel.prototype.name;
-    /** @type {?} */
-    HotelKeytel.prototype.id;
+    /**
+     * @type {?}
+     * @private
+     */
+    User.prototype._id;
+    /**
+     * @type {?}
+     * @private
+     */
+    User.prototype._alias;
 }
 
 /**
@@ -40,5 +61,5 @@ if (false) {
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
-export { HotelKeytel };
+export { User };
 //# sourceMappingURL=models.js.map

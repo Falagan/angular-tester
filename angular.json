@@ -100,5 +100,8 @@
       }
     }
   },
-  "defaultProject": "angular-tester"
+  "defaultProject": "angular-tester",
+  "cli": {
+    "defaultCollection": "@nativescript/schematics"
+  }
 }

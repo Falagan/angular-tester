@@ -5,7 +5,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NotFoundComponent } from './static/not-found/not-found.component';
 import { AboutComponent } from './static/about/about.component';
 import { RouterModule } from '@angular/router';
-import { BootstrapCustomModule } from '../../lib/library-angular-tester/ui';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatMenuModule} from "@angular/material/menu";
@@ -19,7 +18,6 @@ import {MatInputModule} from "@angular/material/input";
     CommonModule,
     FontAwesomeModule,
     RouterModule,
-    BootstrapCustomModule,
     MatToolbarModule,
     MatSidenavModule,
     MatMenuModule,

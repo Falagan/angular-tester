@@ -6,7 +6,6 @@ import {
   OnInit
 } from '@angular/core';
 import {WebsocketrxjsService} from './services/websocketrxjs/websocketrxjs.service';
-import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-websocket-rxjs',
@@ -19,7 +18,7 @@ export class WebsocketRxjsComponent implements OnInit, OnDestroy {
   public logs = [];
 
   constructor(private _webSocketRxJsService: WebsocketrxjsService, private cdr: ChangeDetectorRef) {
-    this._webSocketRxJsService.create('ws://172.16.43.59:8080/bookingService/tareas?id=5604');
+    this._webSocketRxJsService.create(' ws://demos.kaazing.com/echo');
   }
 
   ngOnInit() {
@@ -29,6 +28,13 @@ export class WebsocketRxjsComponent implements OnInit, OnDestroy {
           this.cdr.detectChanges();
         }
     );
+
+    let a = 0;
+
+    setInterval(()=>{
+      a++;
+      this._webSocketRxJsService.send('Texto enviado y recibido numero: ' + a)
+    }, 5000)
   }
 
   ngOnDestroy() {

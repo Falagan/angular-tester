@@ -1,0 +1,59 @@
+<div class="card">
+  <div class="card-header text-center">
+    <span i18n>Informacion del País</span>
+  </div>
+  <div class="card-body">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <h5 class="card-title" i18n>Región</h5>
+        <p class="card-text" i18n>Nombre: {{ data.region.value }}</p>
+        <p class="card-text">ID: {{ data.region.id }}</p>
+        <p class="card-text">IsoCode: {{ data.region.iso2code }}</p>
+      </li>
+      <li class="list-group-item">
+        <h5 class="card-title" i18n>Administración</h5>
+        <p class="card-text" i18n>Nombre: {{ data.adminregion.value }}</p>
+        <p class="card-text">ID: {{ data.adminregion.id }}</p>
+        <p class="card-text">IsoCode: {{ data.adminregion.iso2code }}</p>
+      </li>
+      <li class="list-group-item">
+        <h5 class="card-title" i18n>Ingresos</h5>
+        <p class="card-text">
+          <span i18n>Valor: {{ data.incomeLevel.value }}</span>
+        </p>
+        <p class="card-text" i18n>ID:{{ data.incomeLevel.id }}</p>
+        <p class="card-text" i18n>IsoCode: {{ data.incomeLevel.iso2code }}</p>
+      </li>
+      <li class="list-group-item">
+        <h5 class="card-title" i18n>Deuda</h5>
+        <p class="card-text" i18n>Valor: {{ data.lendingType.value }}</p>
+        <p class="card-text">ID: {{ data.lendingType.id }}</p>
+
+        <p class="card-text">IsoCode: {{ data.lendingType.iso2code }}</p>
+      </li>
+      <li class="list-group-item">
+        <h5 class="card-title" i18n>Capital</h5>
+        <p class="card-text">
+          {{ data.capitalCity }}
+        </p>
+      </li>
+      <li class="list-group-item">
+        <h5 class="card-title" i18n>Latitud</h5>
+        <p class="card-text">
+          {{ data.longitude }}
+        </p>
+      </li>
+      <li class="list-group-item">
+        <h5 class="card-title" i18n>Longitud</h5>
+        <p class="card-text">
+          {{ data.latitude }}
+        </p>
+      </li>
+    </ul>
+      <a
+        class="btn btn-primary mt-2 float-right"
+        [routerLink]="['/main/world-bank/region', data.region.id, data.region.value]"
+        i18n >Ir a región continental</a
+      >
+  </div>
+</div>

@@ -1,7 +1,5 @@
-import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef} from "@angular/core";
-import { Router, NavigationEnd, NavigationStart } from "@angular/router";
-import { IHeaderMenuData } from "src/app/shared/components/header-menu/IHeaderMenuData";
-import Constants from 'src/assets/constants';
+import { Component, OnInit, ChangeDetectionStrategy} from "@angular/core";
+import { Router } from "@angular/router";
 import {MatTreeNestedDataSource} from "@angular/material/tree";
 import {NestedTreeControl} from "@angular/cdk/tree";
 
@@ -53,8 +51,7 @@ export class MainComponent implements OnInit {
 
   treeControl = new NestedTreeControl<FoodNode>(node => node.children);
   dataSource = new MatTreeNestedDataSource<FoodNode>();
-  
-  public headerMenuData: IHeaderMenuData = Constants.HEADER_MENU_INIT_DATA;
+
 
   constructor(private _router: Router) {
     this.dataSource.data = TREE_DATA;

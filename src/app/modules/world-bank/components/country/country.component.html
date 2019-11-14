@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="row p-4">
+    <div class="col">
+      <hr/>
+      <h3 class="text-center" i18n><span>{{ countryName }}</span></h3>
+      <hr/>
+    </div>
+  </div>
+  <div class="row p-4">
+    <div class="col-10 m-auto">
+      <div *ngIf="country$ | async as country">
+        <wb-informer-country-info [data]="country"></wb-informer-country-info>
+      </div>
+    </div>
+  </div>
+</div>

@@ -14,29 +14,27 @@ $pink-2: #d81b60
 $white: white
 $black: black
 
-
-$gray: gray
-$gray-1:#5c6671
-$gray-2: #656a6f
-$gray-3: #eeeeee
-$dark: #363636
-$dark-2: #656565
-$dark-3:#3e4b5b
-$yellow: #e3ab12
-$yellow-link: #9a740d
-$green: #2e7d81
-$green-1-link: $white
-$green-1:#01e08f
-$red-angular: #CD6155
-
-
 //Mat
 //COLORES
 
 
 //CONTAINERS
+mat-sidenav-container
+  background-color: white
+
+mat-sidenav-content
+  background-color: white
 
 
+//IMAGENES
+.logo-img
+  width: 46px
+  height: 46px
+
+.logo-gitHub
+  width: 26px
+  height: 26px
+  cursor: pointer
 //MENUS
 mat-toolbar
   position: absolute
@@ -69,55 +67,12 @@ mat-toolbar
   background: #555
 
 
-//Textos
-$title-color: $black
-$subtitle-color: $white
-$text-color: $dark-3
-//Links
-$link: $green
-$link-hover: $green-1-link
-// Lines
-$line-dotted-color: $gray-1
-$line-dotted-color-hover: $gray-2
-
-//Modals
-$modal-content-width: 400px !important
-$modal-background-color: $white
-//Inputs y Controls
-$input-login-color: $white
-$input-login-background-color: $red-angular
-$input-login-border-bottom-color: $white
-$input-border-color: transparent
-$input-shadow: none
-$control-border-width: 1px
-//Logo
-$logo-text-color: $white
-$logo-color: $white
-//Menu Lateral
-$aside-border-color: $red-angular
-$aside-background-color: $red-angular
-$aside-links-color: $black
-$aside-links-color-hover: $white
-//Header
-$header-background-color: $red-angular
-$header-color: $black
-//Fa icons
-$fa-icon-color: $black
-$fa-icon-color-hover: $white
-$fa-icon-waiter-color: $white
-//Dropdown
-$dropdown-background-color: transparent
-$dropdown-color: $black
-$dropdown-border-color: $black
-$dropdown-border-color-hover: $white
-$dropdown-background-color-hover: transparent
-$dropdown-color-hover: $white
 
 // ESTILOS COMUNES
 //Body, Html
 html, body
   height: 100%
-  background-color: $white
+  background-color: white
 //Outline
 *:focus
   outline: none !important
@@ -128,283 +83,8 @@ html, body
   box-shadow: none !important
 
 
-hr
-  height: 1px !important
-  background-color: $dark-3 !important
 
-//FaIcon
-fa-icon
-  color: $fa-icon-color!important
-  border-color: $fa-icon-color!important
 
-fa-icon:hover
-  color: $fa-icon-color-hover!important 
-  border-color: $fa-icon-color-hover!important
 
-// Waiters
-.waiter
-  color: $fa-icon-waiter-color
-
-// Cards
 .card
-  border: 1px solid $dark
-  border-radius: 0
-  padding: 5px
-  background-color: transparent
-  color: $white
-
-.card-options
-  background-color: transparent
-
-.card-loading
-  background-color: $dark-3
-
-.card-filter
-  background-color: $dark-3
-
-.card-title
-  font-size: 15px
-  text-align: left
-  font-weight: bold
-  color: $white
-
-// List
-.list-group-item
-  background-color: $dark-3
-  border-color: transparent
-  font-size: 12px
-
-.list-group-item-action:hover
-  background-color: $dark-2
-  color: $dark-2
-
-.list-group-item-action:focus
-  background-color: $dark-2
-  color: $dark-2
-
-// Badge
-.badge
-  background-color: transparent
-  border-radius: 0
-  color: $dark
-
-// Table
-th
-  font-weight: lighter
-
-.table-dark
-  background-color: transparent
-// Selects
-
-select
-  border-radius: 0
-  background-color: transparent
-  height: 30px
-  color: $white
-  border-color: $white
-select option
-  background-color: $dark-3
-  border-color: $white
-// Hr
-
-hr
-  border-color: $gray-1
-
-// List
-.list-group-item
-  border-radius: 0!important
-  color: $white
-  border-color: $dark-3
-  margin-bottom: 10px!important
-
-
-//Dropdown
-.dropdown-toggle
-  background-color: $dropdown-background-color!important
-  color: $dropdown-color!important
-  border-color: $dropdown-border-color!important
-  border-radius: 0!important
-
-.dropdown-toggle:hover
-  border-color: $dropdown-border-color-hover!important
-  background-color: $dropdown-background-color-hover!important
-  color: $dropdown-color-hover!important
-
-// Checkbox/ Radio
-
-.checkbox
-  padding-left: 25px
-
-.checkbox label
-  display: inline-block
-  vertical-align: middle
-  position: relative
-  padding-left: 5px
-.checkbox label::before
-  margin-top: 4px
-  content: ""
-  display: inline-block
-  position: absolute
-  width: 17px
-  height: 17px
-  left: 0
-  margin-left: -20px
-  border: 1px solid $white
-  border-radius: 0
-  background-color: transparent
-  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out
-  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out
-  transition: border 0.15s ease-in-out, color 0.15s ease-in-out
-.checkbox label::after
-  display: inline-block
-  position: absolute
-  width: 16px
-  height: 16px
-  left: -2px
-  top: 0
-  margin-left: -20px
-  padding-left: 3px
-  padding-top: 1px
-  font-size: 15px
-  color: $gray-1
-.checkbox input[type="checkbox"],
-.checkbox input[type="radio"]
-  opacity: 0
-  z-index: 1
-  cursor: pointer
-
-.checkbox input[type="checkbox"]:focus + label::before,
-.checkbox input[type="radio"]:focus + label::before
-  outline: none
-.checkbox input[type="checkbox"]:checked + label::after,
-.checkbox input[type="radio"]:checked + label::after
-  font-family: "FontAwesome"
-  content: "\f00c"
-.checkbox input[type="checkbox"]:indeterminate + label::after,
-.checkbox input[type="radio"]:indeterminate + label::after
-  display: block
-  content: ""
-  width: 10px
-  height: 3px
-  background-color: transparent
-  border-radius: 0
-  margin-left: -16.5px
-  margin-top: 7px
-
-.checkbox input[type="checkbox"]:disabled,
-.checkbox input[type="radio"]:disabled
-  cursor: not-allowed
-
-.checkbox input[type="checkbox"]:disabled + label,
-.checkbox input[type="radio"]:disabled + label
-  opacity: 0.65
-.checkbox input[type="checkbox"]:disabled + label::before,
-.checkbox input[type="radio"]:disabled + label::before
-  background-color: $gray-1
-  cursor: not-allowed
-.checkbox.checkbox-circle label::before
-  border-radius: 50%
-.checkbox.checkbox-inline
-  margin-top: 0
-
-.checkbox-app input[type="checkbox"]:checked + label::before,
-.checkbox-app input[type="radio"]:checked + label::before
-  background-color: $green
-  border-color: transparent
-.checkbox-app input[type="checkbox"]:checked + label::after,
-.checkbox-app input[type="radio"]:checked + label::after
-  color: #fff
-
-.checkbox-app input[type="checkbox"]:indeterminate + label::before,
-.checkbox-app input[type="radio"]:indeterminate + label::before
-  background-color: $green
-  border-color: transparent
-
-.checkbox-app input[type="checkbox"]:indeterminate + label::after,
-.checkbox-app input[type="radio"]:indeterminate + label::after
-  background-color: #fff
-
-// Radio
-
-.radio
-  padding-left: 20px
-.radio label
-  display: inline-block
-  vertical-align: middle
-  position: relative
-  padding-left: 5px
-.radio label::before
-  content: ""
-  display: inline-block
-  position: absolute
-  width: 17px
-  height: 17px
-  left: 0
-  margin-left: -20px
-  border: 1px solid #cccccc
-  border-radius: 50%
-  background-color: #fff
-  -webkit-transition: border 0.15s ease-in-out
-  -o-transition: border 0.15s ease-in-out
-  transition: border 0.15s ease-in-out
-.radio label::after
-  display: inline-block
-  position: absolute
-  content: " "
-  width: 11px
-  height: 11px
-  left: 3px
-  top: 3px
-  margin-left: -20px
-  border-radius: 50%
-  background-color: #555555
-  -webkit-transform: scale(0, 0)
-  -ms-transform: scale(0, 0)
-  -o-transform: scale(0, 0)
-  transform: scale(0, 0)
-  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33)
-  -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33)
-  -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33)
-  transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33)
-.radio input[type="radio"]
-  opacity: 0
-  z-index: 1
-  cursor: pointer
-
-.radio input[type="radio"]:focus + label::before
-  outline: thin dotted
-  outline: 5px auto -webkit-focus-ring-color
-  outline-offset: -2px
-.radio input[type="radio"]:checked + label::after
-  -webkit-transform: scale(1, 1)
-  -ms-transform: scale(1, 1)
-  -o-transform: scale(1, 1)
-  transform: scale(1, 1)
-.radio input[type="radio"]:disabled
-  cursor: not-allowed
-
-.radio input[type="radio"]:disabled + label
-  opacity: 0.65
-.radio input[type="radio"]:disabled + label::before
-  cursor: not-allowed
-.radio.radio-inline
-  margin-top: 0
-
-.radio-app input[type="radio"] + label::after
-  background-color: $green
-.radio-app input[type="radio"]:checked + label::before
-  border-color: $white
-.radio-app input[type="radio"]:checked + label::after
-  background-color: $white
-input[type="checkbox"].styled:checked + label:after,
-input[type="radio"].styled:checked + label:after
-  font-family: 'FontAwesome'
-  content: "\f00c"
-input[type="checkbox"] .styled:checked + label::before,
-input[type="radio"] .styled:checked + label::before
-  color: #fff
-input[type="checkbox"] .styled:checked + label::after,
-input[type="radio"] .styled:checked + label::after
-  color: #fff
-
-
+  color: black!important

@@ -11,7 +11,7 @@
             <p>Usuario/Contraseña incorrectos.</p>
           </div>
           <div class="p-0 ml-auto">
-            <button (click)="closeModal()" class="modal-button"><fa-icon icon="window-close" class="close-modal"></fa-icon></button>
+            <button (click)="closeModal()" class="modal-button">x</button>
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@
       <div class="waiter-container notification">
         <div class="d-flex flex-row h-100 justify-content-center align-items-center">
           <div class="p-0">
-            <fa-icon [icon]="['fa', 'circle-notch']" [spin]="true" size="3x" class="waiter"></fa-icon>
+            <mat-spinner></mat-spinner>
           </div>
         </div>
       </div>

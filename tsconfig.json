@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -19,23 +19,12 @@
       "dom"
     ],
     "paths": {
-      "libraryTester/models": [
-        "src/lib/library-angular-tester/models"
-      ],
-      "libraryTester/ui": [
-        "src/lib/library-angular-tester/ui"
-      ],
-      "libraryTester/services": [
-        "src/lib/library-angular-tester/services"
-      ],
-      "cibeles/models": [
-        "src/lib/cibeles/models"
-      ],
-      "cibeles/ui": [
-        "src/lib/cibeles/ui"
-      ],
-      "cibeles/services": [
-        "src/lib/cibeles/services"
+      "@src/*": [
+        "src/*.android.ts",
+        "src/*.ios.ts",
+        "src/*.tns.ts",
+        "src/*.web.ts",
+        "src/*"
       ]
     }
   },
