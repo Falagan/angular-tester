@@ -6,8 +6,7 @@
   "spellright.documentTypes": [
     "markdown",
     "latex",
-    "plaintext",
-    "typescript"
+    "plaintext"
   ],
   "workbench.editor.enablePreview": false,
 }

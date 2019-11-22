@@ -14,11 +14,6 @@
   },
   "private": true,
   "dependencies": {
-    "nativescript-angular": "~8.20.0",
-    "nativescript-theme-core": "~1.0.4",
-    "reflect-metadata": "~0.1.12",
-    "tns-core-modules": "~6.2.0",
-    "tslib": "^1.10.0",
     "@angular/animations": "~8.2.3",
     "@angular/cdk": "~8.2.3",
     "@angular/common": "~8.2.3",
@@ -37,10 +32,16 @@
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@nativescript/schematics": "^0.7.3",
     "@ng-bootstrap/ng-bootstrap": "^5.1.1",
+    "@syncfusion/ej2-angular-grids": "^17.3.28",
     "bootstrap": "^4.3.1",
     "firebase-functions": "^3.3.0",
     "hammerjs": "^2.0.8",
+    "nativescript-angular": "~8.20.0",
+    "nativescript-theme-core": "~1.0.4",
+    "reflect-metadata": "~0.1.12",
     "rxjs": "~6.4.0",
+    "tns-core-modules": "~6.2.0",
+    "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
