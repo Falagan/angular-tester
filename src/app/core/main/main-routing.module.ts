@@ -28,10 +28,6 @@ const routes: Routes = [
       {
         path: 'akita-state-management',
         loadChildren: () => import('../../modules/akita-state-management/akita-state-management.module').then(m => m.AkitaStateManagementModule)
-      },
-      {
-        path: 'syncfusion',
-        loadChildren: () => import('../../modules/syncfusion/syncfusion.module').then(m => m.SyncfusionModule)
       }
     ]
   }

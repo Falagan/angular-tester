@@ -5,8 +5,6 @@ import {RouterModule} from '@angular/router';
 import {WebsocketRxjsModule} from './websocket-rxjs/websocket-rxjs.module';
 import {ReporterModule} from './reporter/reporter.module';
 import {AkitaStateManagementModule} from "./akita-state-management/akita-state-management.module";
-import { SyncfusionModule } from './syncfusion/syncfusion.module';
-
 
 @NgModule({
   declarations: [TodoComponent],
@@ -15,8 +13,7 @@ import { SyncfusionModule } from './syncfusion/syncfusion.module';
     RouterModule,
     WebsocketRxjsModule,
     ReporterModule,
-    AkitaStateManagementModule,
-    SyncfusionModule
+    AkitaStateManagementModule
   ],
   exports: [TodoComponent]
 })
